@@ -13,44 +13,63 @@
 	<meta name="description" content="Find your favorite content site in this page.">
 	<meta property="og:description" content="Find your favorite content site in this page.">
 	<link rel="shortcut icon" href="/img/favicon.ico">
-	<link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
 	<style type="text/css">
 		:root{
-	--bg-main: #fafafa;
-	--tx-c: #000;
-	--bg-main2: #111;
-	--tx-c2: #eee;
-	--bd-c: #ddd;
-  
-	--radius: 4px;
-
---shadow-01: 0px 1px 2px rgba(251,251,254,0.2);
---shadow-02: 0px 1px 6px rgba(251,251,254,0.2);
-
-  --d: 8s;
-  --angle: 90deg;
-  --angle2: 0deg;
-  --c1: rgba(255,255,255,1);
-  --c2: rgba(27,27,27,0.1);
-  --c3: rgba(33, 33, 33, 1);
-  --c4: rgba(99, 99, 99, 0.1);
-  --cc1: #fb0094;
-  --cc2: #0000ff;
-  --cc3: #00ff00;
-  --cc4: #ffff00;
-  --cc5: #ff0000;
-  --blurpx: 30px;
-}
-		body{background-color:var(--bg-main2);color:var(--tx-c2);}
+			--bg-main: #fafafa;
+			--tx-c: #000;
+			--bg-main2: #111;
+			--tx-c2: #eee;
+			--bd-c: #ddd;
+			--radius: 4px;
+			--shadow-01: 0px 1px 2px rgba(251,251,254,0.2);
+			--shadow-02: 0px 1px 6px rgba(251,251,254,0.2);
+			  --d: 8s;
+			  --angle: 90deg;
+			  --angle2: 0deg;
+			  --c1: rgba(255,255,255,1);
+			  --c2: rgba(27,27,27,0.1);
+			  --c3: rgba(33, 33, 33, 1);
+			  --c4: rgba(99, 99, 99, 0.1);
+			  --cc1: #fb0094;
+			  --cc2: #0000ff;
+			  --cc3: #00ff00;
+			  --cc4: #ffff00;
+			  --cc5: #ff0000;
+			  --blurpx: 30px;}
+		html {line-height:1.5;-webkit-text-size-adjust:100%;font-family:sans-serif}
+		body{background-color:var(--bg-main2);color:var(--tx-c2);margin:0}
 		*,.pure-menu,:after,:before{box-sizing:border-box}
 		a{text-decoration:none;color:var(--tx-c2);border:1px solid var(--bd-c);margin:.44em auto;display:block;width:90%;padding:1em;border-radius:var(--radius);}
+
+		.pure-g {
+		    letter-spacing: -.31em;
+		    text-rendering: optimizespeed;
+		    font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-orient: horizontal;
+		    -webkit-box-direction: normal;
+		    -ms-flex-flow: row wrap;
+		    flex-flow: row wrap;
+		    -ms-flex-line-pack: start;
+		    align-content: flex-start}
+
+		.pure-g [class*=pure-u] {font-family:sans-serif}
+		.pure-u-1,.pure-u-1-1,.pure-u-1-3{
+			display: inline-block;
+			text-align:center;
+			letter-spacing: normal;
+			word-spacing: normal;
+			vertical-align: top;
+			text-rendering: auto}
+		.pure-u-1-3{width:33.3333%}
+		.pure-u-1,.pure-u-1-1 {width:100%}
+
+
 		.w96 a{width:96%;padding:.3em;margin:0 auto;}
 		.wdbody{max-width:1280px;margin:0 auto;}
-		.pure-u-1, .pure-u-1-3 {
-		    text-align: center;
-		    line-height: 1.5;
-		}
-		.pure-u-1-3{}
+
 
 		.logotitle{font-size:28px;font-weight:900;border-bottom:none;}
 		.title{font-size:18px;font-weight:700;padding:1em;border-bottom:none;}
@@ -59,40 +78,25 @@
 		.txl{text-align:left;}
 
 
-		.pure-u-1-3 a {
-  position: relative;
-  background: linear-gradient(var(--angle2), var(--c3), var(--c4));
-}
+		.pure-u-1-3 a {position:relative;background:linear-gradient(var(--angle2), var(--c3), var(--c4));}
+		.pure-u-1-3 a:before, .pure-u-1-3 a:after {
+		  content: '';
+		  position: absolute;
+		  left: -2px;
+		  top: -2px;
+		  background: linear-gradient(var(--angle), var(--cc1), var(--cc2), var(--cc3), var(--cc4), var(--cc5), var(--cc1), var(--cc2), var(--cc3), var(--cc4), var(--cc5));
+		  background-size: 400%;
+		  width: calc(100% + 4px);
+		  height: calc(100% + 4px);
+		  z-index: -1;
+		  animation: steam var(--d) linear infinite;}
 
-.pure-u-1-3 a:before, .pure-u-1-3 a:after {
-  content: '';
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  background: linear-gradient(var(--angle), var(--cc1), var(--cc2), var(--cc3), var(--cc4), var(--cc5), var(--cc1), var(--cc2), var(--cc3), var(--cc4), var(--cc5));
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  z-index: -1;
-  animation: steam var(--d) linear infinite;
-}
+		.pure-u-1-3 a:after {filter: blur(var(--blurpx));}
 
-@keyframes steam {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.pure-u-1-3 a:after {
-  filter: blur(var(--blurpx));
-}
-
+		  @keyframes steam {
+		    0% {background-position: 0 0;}
+		    50% {background-position: 400% 0;}
+		    100% {background-position: 0 0;}}
 	</style>
 </head>
 <body>
