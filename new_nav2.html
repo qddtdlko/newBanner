@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New Navitor 2</title>
+	<style type="text/css">
+		:root {
+			--dbg: #1a1d23;
+			--mbg: #495464;
+			--sbg: #BBBFCA;
+			--tbg: #E8E8E8;
+			--bbg: #E1E1E1;
+			--fbg: #F4F4F2;
+			--mbc: #718198;
+		}
+		*{box-sizing:border-box;}
+		html{line-height:1.2;-webkit-text-size-adjust:100%;font-family:sans-serif}
+		body{background-color:var(--mbg);margin:0;color:var(--dbg);}
+		h1{font-size:2em;margin:.67em 0}
+		a{text-decoration:none;color:unset;}
+		p{font-size:9px}h4{margin:.5em 0;}
+
+		.pure-g {
+	    letter-spacing: -.31em;
+	    text-rendering: optimizespeed;
+	    font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-orient: horizontal;
+	    -webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	    -ms-flex-line-pack: start;
+	    align-content: flex-start}
+
+	  .pure-u-1,.pure-u-1-2,.pure-u-1-3,.pure-u-2-3{
+	    display: inline-block;
+	    letter-spacing: normal;
+	    word-spacing: normal;
+	    vertical-align: top;
+	    text-rendering: auto}
+
+	  .pure-u-1-3{width:33.3333%}.pure-u-1-2{width:50%}.pure-u-2-3{width:66.6667%}.pure-u-1{width:100%}
+
+		.main{max-width:960px;margin:0 auto;}
+
+		.logo{text-align:center;background:var(--sbg)}
+
+		.menubar{position:-webkit-sticky;position:sticky;top:0;overflow:hidden;background:var(--mbg);}
+		.menubar a{display:inline-block;padding:.35em;color:var(--tbg);border-right:1px dashed var(--mbc)}
+		.menubar .more{float:right;padding:.3em;background:var(--sbg);color:var(--dbg);font-weight:700;border:1px solid var(--bbg);cursor:pointer}
+		.menubar .moremenu a{width:100%;margin:0 auto;padding:1em 2em;border-bottom:1px dashed var(--mbc);border-right:none;font-size:.8em;}
+		.menubar .moremenu{display:none}.menubar .openmenu{display:block}
+
+		.title{background:var(--tbg);padding-left:1em;border:1px solid var(--fbg);}
+
+		.list{background:var(--fbg);padding:.5em 0}
+		.list .pure-u-1,.menubar{padding:.5em}
+		.list a{padding:.5em;float:left;}
+		.list a div{border:solid 1px var(--bbg);box-shadow: 0px 0px 20px -1px rgb(158 158 158 / 20%);}
+		.list a .pure-u-1{display:flex;align-items:center}
+		.list a .pure-u-1 span{padding:.3em}
+
+	</style>
+</head>
+<body>
+	<div class="pure-g main">
+		
+		<div class="pure-u-1 logo"><h1>678精品发布</h1></div>
+
+		<div class="pure-u-1 menubar">
+			<div class="pure-u-1">
+				<a href="//linux.com">Linux技巧</a>
+				<a href="//linux.com">Win技巧</a>
+				<a href="//linux.com">MAc技巧</a>
+				<a href="//linux.com">zhao技巧</a>
+				<button class="more">更多</button>
+			</div>
+			<div class="pure-u-1 moremenu">
+				<a href="//linux.com">黄土高坡</a>
+				<a href="//linux.com">风光秀丽</a>
+				<a href="//linux.com">程序员客栈</a>
+				<a href="//linux.com">套索技巧</a>
+			</div>
+		</div>
+
+		<div class="pure-u-1 title"><h3>#分类名称</h3></div>
+		<div class="pure-u-1 list">
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span class="pure-u-1-3"><svg viewBox="0 0 164.3 164.3"><rect width="164.3" height="164.35" rx="34" fill="#ffe200"></rect><rect x="35.1" y="65.1" width="95" height="20.47" fill="#231815"></rect><polygon points="84.4 65.6 65.6 85.2 38.3 85.2 57.2 65.6 84.4 65.6" fill="#fff"></polygon><polygon points="99.2 65.6 80.3 85.2 107.6 85.2 126.5 65.6 99.2 65.6" fill="#fff"></polygon><polygon points="113.7 11.6 122.3 30.5 34.9 65.1 26.3 46.2 113.7 11.6" fill="#231815"></polygon><polygon points="71.9 28.7 62.8 53.5 37.7 63.5 46.8 38.6 71.9 28.7" fill="#fff"></polygon><polygon points="85.5 23.3 76.4 48.2 101.5 38.2 110.6 13.3 85.5 23.3" fill="#fff"></polygon><rect x="35.1" y="85.6" width="94.9" height="55.11" fill="#c30d23"></rect><polygon points="68.6 103.1 65.2 99.9 56.1 108.4 46.9 99.9 43.5 103.1 52.7 111.6 43.5 120.1 46.9 123.3 56.1 114.8 65.2 123.3 68.6 120.1 59.5 111.6 68.6 103.1" fill="#fff"></polygon><polygon points="95.9 103.1 92.5 99.9 83.4 108.4 74.2 99.9 70.8 103.1 80 111.6 70.8 120.1 74.2 123.3 83.4 114.8 92.5 123.3 95.9 120.1 86.8 111.6 95.9 103.1" fill="#fff"></polygon><polygon points="122.5 103.1 119.1 99.9 110 108.4 100.8 99.9 97.4 103.1 106.6 111.6 97.4 120.1 100.8 123.3 110 114.8 119.1 123.3 122.5 120.1 113.4 111.6 122.5 103.1" fill="#fff"></polygon></svg></span><span class="pure-u-2-3"><h4>独具风格APP</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span class="pure-u-1-3"><svg viewBox="0 0 164.3 164.3"><rect width="164.3" height="164.35" rx="34" fill="#ffe200"></rect><rect x="35.1" y="65.1" width="95" height="20.47" fill="#231815"></rect><polygon points="84.4 65.6 65.6 85.2 38.3 85.2 57.2 65.6 84.4 65.6" fill="#fff"></polygon><polygon points="99.2 65.6 80.3 85.2 107.6 85.2 126.5 65.6 99.2 65.6" fill="#fff"></polygon><polygon points="113.7 11.6 122.3 30.5 34.9 65.1 26.3 46.2 113.7 11.6" fill="#231815"></polygon><polygon points="71.9 28.7 62.8 53.5 37.7 63.5 46.8 38.6 71.9 28.7" fill="#fff"></polygon><polygon points="85.5 23.3 76.4 48.2 101.5 38.2 110.6 13.3 85.5 23.3" fill="#fff"></polygon><rect x="35.1" y="85.6" width="94.9" height="55.11" fill="#c30d23"></rect><polygon points="68.6 103.1 65.2 99.9 56.1 108.4 46.9 99.9 43.5 103.1 52.7 111.6 43.5 120.1 46.9 123.3 56.1 114.8 65.2 123.3 68.6 120.1 59.5 111.6 68.6 103.1" fill="#fff"></polygon><polygon points="95.9 103.1 92.5 99.9 83.4 108.4 74.2 99.9 70.8 103.1 80 111.6 70.8 120.1 74.2 123.3 83.4 114.8 92.5 123.3 95.9 120.1 86.8 111.6 95.9 103.1" fill="#fff"></polygon><polygon points="122.5 103.1 119.1 99.9 110 108.4 100.8 99.9 97.4 103.1 106.6 111.6 97.4 120.1 100.8 123.3 110 114.8 119.1 123.3 122.5 120.1 113.4 111.6 122.5 103.1" fill="#fff"></polygon></svg></span><span class="pure-u-2-3"><h4>独具风格</h4><p>这是一款名叫独具风格的App产品</p></span></div></a></li>
+
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span class="pure-u-1-3"><svg viewBox="0 0 164.3 164.3"><rect width="164.3" height="164.35" rx="34" fill="#ffe200"></rect><rect x="35.1" y="65.1" width="95" height="20.47" fill="#231815"></rect><polygon points="84.4 65.6 65.6 85.2 38.3 85.2 57.2 65.6 84.4 65.6" fill="#fff"></polygon><polygon points="99.2 65.6 80.3 85.2 107.6 85.2 126.5 65.6 99.2 65.6" fill="#fff"></polygon><polygon points="113.7 11.6 122.3 30.5 34.9 65.1 26.3 46.2 113.7 11.6" fill="#231815"></polygon><polygon points="71.9 28.7 62.8 53.5 37.7 63.5 46.8 38.6 71.9 28.7" fill="#fff"></polygon><polygon points="85.5 23.3 76.4 48.2 101.5 38.2 110.6 13.3 85.5 23.3" fill="#fff"></polygon><rect x="35.1" y="85.6" width="94.9" height="55.11" fill="#c30d23"></rect><polygon points="68.6 103.1 65.2 99.9 56.1 108.4 46.9 99.9 43.5 103.1 52.7 111.6 43.5 120.1 46.9 123.3 56.1 114.8 65.2 123.3 68.6 120.1 59.5 111.6 68.6 103.1" fill="#fff"></polygon><polygon points="95.9 103.1 92.5 99.9 83.4 108.4 74.2 99.9 70.8 103.1 80 111.6 70.8 120.1 74.2 123.3 83.4 114.8 92.5 123.3 95.9 120.1 86.8 111.6 95.9 103.1" fill="#fff"></polygon><polygon points="122.5 103.1 119.1 99.9 110 108.4 100.8 99.9 97.4 103.1 106.6 111.6 97.4 120.1 100.8 123.3 110 114.8 119.1 123.3 122.5 120.1 113.4 111.6 122.5 103.1" fill="#fff"></polygon></svg></span><span class="pure-u-2-3"><h4>独具风格APP</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span class="pure-u-1-3"><svg viewBox="0 0 164.3 164.3"><rect width="164.3" height="164.35" rx="34" fill="#ffe200"></rect><rect x="35.1" y="65.1" width="95" height="20.47" fill="#231815"></rect><polygon points="84.4 65.6 65.6 85.2 38.3 85.2 57.2 65.6 84.4 65.6" fill="#fff"></polygon><polygon points="99.2 65.6 80.3 85.2 107.6 85.2 126.5 65.6 99.2 65.6" fill="#fff"></polygon><polygon points="113.7 11.6 122.3 30.5 34.9 65.1 26.3 46.2 113.7 11.6" fill="#231815"></polygon><polygon points="71.9 28.7 62.8 53.5 37.7 63.5 46.8 38.6 71.9 28.7" fill="#fff"></polygon><polygon points="85.5 23.3 76.4 48.2 101.5 38.2 110.6 13.3 85.5 23.3" fill="#fff"></polygon><rect x="35.1" y="85.6" width="94.9" height="55.11" fill="#c30d23"></rect><polygon points="68.6 103.1 65.2 99.9 56.1 108.4 46.9 99.9 43.5 103.1 52.7 111.6 43.5 120.1 46.9 123.3 56.1 114.8 65.2 123.3 68.6 120.1 59.5 111.6 68.6 103.1" fill="#fff"></polygon><polygon points="95.9 103.1 92.5 99.9 83.4 108.4 74.2 99.9 70.8 103.1 80 111.6 70.8 120.1 74.2 123.3 83.4 114.8 92.5 123.3 95.9 120.1 86.8 111.6 95.9 103.1" fill="#fff"></polygon><polygon points="122.5 103.1 119.1 99.9 110 108.4 100.8 99.9 97.4 103.1 106.6 111.6 97.4 120.1 100.8 123.3 110 114.8 119.1 123.3 122.5 120.1 113.4 111.6 122.5 103.1" fill="#fff"></polygon></svg></span><span class="pure-u-2-3"><h4>独具风格</h4><p>这是一款名叫独具风格的App产品</p></span></div></a></li>
+		</div>
+
+		<div class="pure-u-1 title"><h3>#分类名称</h3></div>
+		<div class="pure-u-1 list">
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格APP</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格APP</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格APP</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格APP</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格APP</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格APP</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+			<a class="pure-u-1-2" href=""><div class="pure-u-1"><span><h4>独具风格</h4><p>这是一款名叫独具风格的App产品</p></span></div></a>
+		</div>
+
+		<div class="pure-u-1 logo"><h1>请认准域名678ha.com</h1></div>
+
+	</div>
+
+	<script>
+		//document.querySelector('.moremenu').setAttribute("class", "")
+		const showMoreMenu = document.querySelector(".more");
+		const moremenu = document.querySelector(".moremenu");
+
+		showMoreMenu.addEventListener("click", (e) => {
+			moremenu.classList.toggle("openmenu");
+			if (showMoreMenu.innerText === "更多") {
+			showMoreMenu.innerText = "收起";
+			} else {
+			showMoreMenu.innerText = "更多";
+			}
+		});
+	</script>
+</body>
+</html>
